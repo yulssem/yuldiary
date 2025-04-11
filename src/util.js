@@ -4,6 +4,10 @@ import emotion3 from "./img/emotion3.png";
 import emotion4 from "./img/emotion4.png";
 import emotion5 from "./img/emotion5.png";
 
+export const setPageTitle = (title) => {
+    const titleEl = document.getElementsByTagName('title')[0];
+    titleEl.innerHTML = title;
+}
 export const getEmotionImgById =(emotionId) => {
     const targetEmotionId = String(emotionId);
     switch (targetEmotionId) {
